@@ -1,0 +1,405 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#152b27">
+  <meta name="description" content="Discover The Monk Who Walked to the Silence by Taru Sparkellberry, a novel of patience, courage and inner peace. Explore purchase options and group-order enquiries.">
+  <meta property="og:title" content="The Monk Who Walked to the Silence | Taru Sparkellberry">
+  <meta property="og:description" content="A Novel of Patience, Courage and Inner Peace. Discover the book and explore purchase options.">
+  <title>The Monk Who Walked to the Silence | Taru Sparkellberry</title>
+
+  <style>
+    :root {
+      --forest: #152b27;
+      --green: #31594b;
+      --gold: #d6b779;
+      --cream: #faf7f0;
+      --ink: #26332f;
+      --muted: #68736d;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+
+    a { color: inherit; }
+
+    .topbar {
+      background: var(--forest);
+      color: white;
+      padding: 17px 20px;
+    }
+
+    .nav {
+      max-width: 1080px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand {
+      font-size: 19px;
+      font-weight: bold;
+      letter-spacing: .4px;
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .hero {
+      background:
+        radial-gradient(ellipse at 50% 20%, #426353 0%, var(--forest) 70%);
+      color: white;
+      padding: 76px 20px 82px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 850px;
+      margin: 22px auto;
+      font-size: clamp(36px, 7vw, 66px);
+      line-height: 1.12;
+      font-weight: normal;
+    }
+
+    .subtitle {
+      color: #e6dfd0;
+      font-size: clamp(17px, 3vw, 22px);
+      margin: 20px auto 12px;
+    }
+
+    .author {
+      color: var(--gold);
+      font-size: 19px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 26px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border: 1px solid var(--gold);
+      border-radius: 5px;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      transition: opacity .2s;
+    }
+
+    .btn:hover { opacity: .85; }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #182b25;
+    }
+
+    .btn-outline {
+      color: white;
+      background: transparent;
+    }
+
+    .section {
+      max-width: 940px;
+      margin: auto;
+      padding: 64px 22px;
+    }
+
+    .section h2 {
+      color: var(--forest);
+      font-size: clamp(28px, 4vw, 39px);
+      font-weight: normal;
+      line-height: 1.25;
+      margin: 0 0 20px;
+    }
+
+    .section p { font-size: 17px; }
+
+    .divider {
+      width: 65px;
+      height: 3px;
+      background: var(--gold);
+      margin: 20px 0 28px;
+    }
+
+    .quote {
+      background: #eee7d8;
+      padding: 35px 25px;
+      text-align: center;
+      font-size: 23px;
+      font-style: italic;
+      color: var(--forest);
+    }
+
+    .quote p {
+      max-width: 700px;
+      margin: auto;
+      font-size: 23px;
+    }
+
+    .purchase {
+      background: white;
+      border: 1px solid #e5dfd2;
+      border-radius: 9px;
+      padding: 28px;
+      margin-top: 28px;
+    }
+
+    .purchase h3 {
+      font-size: 23px;
+      color: var(--forest);
+      margin-top: 0;
+    }
+
+    .note {
+      color: var(--muted);
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .bulk {
+      background: #eae7dc;
+      border-top: 1px solid #ded8c9;
+      border-bottom: 1px solid #ded8c9;
+    }
+
+    .bulk-inner {
+      max-width: 940px;
+      margin: auto;
+      padding: 58px 22px;
+    }
+
+    .bulk h2 {
+      color: var(--forest);
+      font-size: clamp(28px, 4vw, 38px);
+      font-weight: normal;
+      margin-top: 0;
+    }
+
+    .bulk-list {
+      padding-left: 23px;
+      font-size: 16px;
+    }
+
+    .footer {
+      background: var(--forest);
+      color: #e9e5dc;
+      padding: 30px 20px;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+    }
+
+    .footer p { margin: 5px 0; }
+
+    .footer a { color: var(--gold); }
+
+    @media (max-width: 480px) {
+      .hero { padding: 58px 18px 65px; }
+      .section { padding: 48px 20px; }
+      .purchase { padding: 22px 18px; }
+      .btn { width: 100%; text-align: center; }
+      .nav { align-items: flex-start; }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Main navigation">
+      <div class="brand">Taru Sparkellberry</div>
+      <a href="#book">The Book</a>
+      <a href="#bulk">Group Orders</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="book">
+      <div class="eyebrow">A Journey Within</div>
+
+      <h1>The Monk Who Walked to the Silence</h1>
+
+      <p class="subtitle">
+        A Novel of Patience, Courage and Inner Peace
+      </p>
+
+      <p class="author">by Taru Sparkellberry</p>
+
+      <p>
+        Sometimes the most important journey is the one that leads us
+        back to ourselves.
+      </p>
+
+      <div class="buttons">
+        <a class="btn btn-gold"
+           href="https://www.amazon.in/dp/B0HP58LGSL"
+           target="_blank"
+           rel="noopener noreferrer">
+          Explore on Amazon India
+        </a>
+
+        <a class="btn btn-outline"
+           href="https://tbanter7.gumroad.com/l/monk-walked-to-silence"
+           target="_blank"
+           rel="noopener noreferrer">
+          Explore on Gumroad
+        </a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="eyebrow">About the Book</div>
+      <h2>A Story of Patience, Courage and Inner Peace</h2>
+      <div class="divider"></div>
+
+      <p>
+        <em>The Monk Who Walked to the Silence</em> invites readers
+        to reflect on the journey towards stillness, resilience and
+        a deeper understanding of life.
+      </p>
+
+      <p>
+        For readers drawn to reflective fiction and stories about
+        personal growth, this novel offers an opportunity to pause,
+        look inward and consider what truly matters.
+      </p>
+
+      <div class="quote">
+        <p>
+          “In the search for silence, we may discover the strength
+          that was within us all along.”
+        </p>
+      </div>
+
+      <p class="note">
+        This is an original promotional line, not a quotation from the book.
+      </p>
+    </section>
+
+    <section class="section" id="purchase">
+      <div class="eyebrow">Find Your Copy</div>
+      <h2>Choose Your Preferred Store</h2>
+      <div class="divider"></div>
+
+      <div class="purchase">
+        <h3>Amazon India</h3>
+        <p>
+          Visit the book's Amazon listing to check the current price,
+          format and availability.
+        </p>
+        <a class="btn btn-gold"
+           href="https://www.amazon.in/dp/B0HP58LGSL"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Amazon Listing
+        </a>
+      </div>
+
+      <div class="purchase">
+        <h3>Gumroad</h3>
+        <p>
+          Visit the Gumroad product page to view the available edition
+          and purchase details.
+        </p>
+        <a class="btn btn-gold"
+           href="https://tbanter7.gumroad.com/l/monk-walked-to-silence"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Gumroad Edition
+        </a>
+      </div>
+
+      <p class="note">
+        Prices, formats and availability are determined by the respective
+        platforms and may change.
+      </p>
+    </section>
+
+    <section class="bulk" id="bulk">
+      <div class="bulk-inner">
+        <div class="eyebrow">Group & Institutional Enquiries</div>
+        <h2>Interested in Group Orders?</h2>
+
+        <p>
+          Are you exploring this book for a reading group, library,
+          educational community or corporate reading programme?
+        </p>
+
+        <p>
+          Group and institutional enquiries are welcome. Please include
+          the following details when contacting the author through an
+          available author contact channel:
+        </p>
+
+        <ul class="bulk-list">
+          <li>Organisation or reading group name</li>
+          <li>Estimated number of copies required</li>
+          <li>Preferred format and country</li>
+          <li>Expected purchase date</li>
+        </ul>
+
+        <p>
+          Bulk pricing, purchasing arrangements, format availability
+          and any applicable permissions must be confirmed before an
+          order is placed.
+        </p>
+
+        <div class="buttons" style="justify-content:flex-start">
+          <a class="btn btn-gold"
+             href="https://www.amazon.in/dp/B0HP58LGSL"
+             target="_blank"
+             rel="noopener noreferrer">
+            View Book Details
+          </a>
+        </div>
+
+        <p class="note">
+          A direct enquiry form or author email has not yet been connected
+          to this website. No enquiry is sent automatically from this page.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Taru Sparkellberry</strong></p>
+    <p>The Monk Who Walked to the Silence</p>
+    <p>A Novel of Patience, Courage and Inner Peace</p>
+    <p>Book links lead to external platforms.</p>
+  </footer>
+</body>
+  </html>
+  
